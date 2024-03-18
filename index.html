@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- BootStrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>iDo</title>
+</head>
+
+<body>
+    <div class="main container">
+
+        <!-- Left Side -->
+
+        <div class="left">
+            <header id="left-header">
+                <h1>To Do</h1>
+            </header>
+
+            <div class="account">
+                <div id="profile-image">
+                    <img src="./images/pp.jpg" alt="profile-image">
+                </div>
+                <div class="details">
+                    <h5 id="fullname">Sahil Dahal</h5>
+                    <p id="email">Sahil@ido.com</p>
+                </div>
+            </div>
+
+            <div class="search-cont">
+                <input type="text" placeholder="Search" id="search">
+                <i class="fa-solid fa-magnifying-glass search-glass" id="searchBtn"></i>
+            </div>
+
+            <div class="toolbar">
+                <div id="myDay" class="toolbar-item active">
+                    <div class="toolbar-icon">
+                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                            aria-hidden="true" width="25" height="25" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path
+                                d="M10 2c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm0 12a4 4 0 100-8 4 4 0 000 8zm0-1a3 3 0 110-6 3 3 0 010 6zm7.5-2.5a.5.5 0 000-1h-1a.5.5 0 000 1h1zM10 16c.28 0 .5.22.5.5v1a.5.5 0 01-1 0v-1c0-.28.22-.5.5-.5zm-6.5-5.5a.5.5 0 000-1H2.46a.5.5 0 000 1H3.5zm.65-6.35c.2-.2.5-.2.7 0l1 1a.5.5 0 11-.7.7l-1-1a.5.5 0 010-.7zm.7 11.7a.5.5 0 01-.7-.7l1-1a.5.5 0 01.7.7l-1 1zm11-11.7a.5.5 0 00-.7 0l-1 1a.5.5 0 00.7.7l1-1a.5.5 0 000-.7zm-.7 11.7a.5.5 0 00.7-.7l-1-1a.5.5 0 00-.7.7l1 1z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="toolbar-title">
+                        <span>My Day</span>
+                    </div>
+                </div>
+
+                <div id="important" class="toolbar-item">
+                    <div class="toolbar-icon">
+                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                            aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path
+                                d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9zm.9.44L8.07 7.25a1 1 0 01-.75.55L3 8.43l3.12 3.04a1 1 0 01.3.89l-.75 4.3 3.87-2.03a1 1 0 01.93 0l3.86 2.03-.74-4.3a1 1 0 01.29-.89L17 8.43l-4.32-.63a1 1 0 01-.75-.55L10 3.35z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="toolbar-title">
+                        <span>Important</span>
+                    </div>
+                </div>
+
+
+                <div id="planned" class="toolbar-item">
+                    <div class="toolbar-icon">
+                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                            aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path
+                                d="M7 11a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm1 2a1 1 0 11-2 0 1 1 0 012 0zm2-2a1 1 0 100-2 1 1 0 000 2zm4-5.5A2.5 2.5 0 0014.5 3h-9A2.5 2.5 0 003 5.5v9A2.5 2.5 0 005.5 17h9a2.5 2.5 0 002.5-2.5v-9zM4 7h12v7.5c0 .83-.67 1.5-1.5 1.5h-9A1.5 1.5 0 014 14.5V7zm1.5-3h9c.83 0 1.5.67 1.5 1.5V6H4v-.5C4 4.67 4.67 4 5.5 4z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="toolbar-title">
+                        <span>Planned</span>
+                    </div>
+                </div>
+
+
+                <div id="assigned" class="toolbar-item">
+                    <div class="toolbar-icon">
+                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                            aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path
+                                d="M10 2a4 4 0 100 8 4 4 0 000-8zM7 6a3 3 0 116 0 3 3 0 01-6 0zm-2 5a2 2 0 00-2 2c0 1.7.83 2.97 2.13 3.8A9.14 9.14 0 0010 18c1.85 0 3.58-.39 4.87-1.2A4.35 4.35 0 0017 13a2 2 0 00-2-2H5zm-1 2a1 1 0 011-1h10a1 1 0 011 1c0 1.3-.62 2.28-1.67 2.95A8.16 8.16 0 0110 17a8.16 8.16 0 01-4.33-1.05A3.36 3.36 0 014 13z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="toolbar-title">
+                        <span>Assigned to me</span>
+                    </div>
+                </div>
+
+                <div id="tasks" class="toolbar-item">
+                    <div class="toolbar-icon">
+                        <svg class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0" fill="currentColor"
+                            aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path
+                                d="M9 2.39a1.5 1.5 0 012 0l5.5 4.94c.32.28.5.69.5 1.12v7.05c0 .83-.67 1.5-1.5 1.5H13a1.5 1.5 0 01-1.5-1.5V12a.5.5 0 00-.5-.5H9a.5.5 0 00-.5.5v3.5c0 .83-.67 1.5-1.5 1.5H4.5A1.5 1.5 0 013 15.5V8.45c0-.43.18-.84.5-1.12L9 2.39zm1.33.74a.5.5 0 00-.66 0l-5.5 4.94a.5.5 0 00-.17.38v7.05c0 .28.22.5.5.5H7a.5.5 0 00.5-.5V12c0-.83.67-1.5 1.5-1.5h2c.83 0 1.5.67 1.5 1.5v3.5c0 .28.22.5.5.5h2.5a.5.5 0 00.5-.5V8.45a.5.5 0 00-.17-.38l-5.5-4.94z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="toolbar-title">
+                        <span>Tasks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="right">
+            <header id="right-header">
+                <h2>My Day</h2>
+                <p id="date"></p>
+
+            </header>
+
+            <div class="taskContainer">
+                <div class="noMatch" style="display: none;"></div>
+                <ul id="taskList">
+
+                </ul>
+
+            </div>
+
+            <div class="createTask">
+                <div class="input">
+                    <i class="fa-light fa-plus" id="plus"></i>
+                    <input type="text" name="task" id="inputTask" placeholder="Add a task">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
